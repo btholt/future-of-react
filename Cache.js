@@ -15,7 +15,7 @@ const Doggo = ({ breed }) => {
 const CacheExample = () => {
   const [breed, setBreed] = useState("hound");
   return (
-    <Suspense fallback={() => <h1>LOADING GOOD BOYS</h1>}>
+    <Suspense fallback={<h1>LOADING GOOD BOYS</h1>}>
       <div>
         <input onBlur={e => setBreed(e.target.value)} />
         <br />
